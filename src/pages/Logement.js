@@ -1,11 +1,15 @@
-import React, { Component } from "react";
+import React from "react";
+import Footer from "../components/footer/Footer";
+import Header from "../components/header/Header";
 
-export default class logement extends Component {
-  render() {
-    return (
-      <div>
-        <h1>logement</h1>
-      </div>
-    );
-  }
-}
+const Logement = () => {
+  return (
+    <div className="logement">
+      <Header />
+      <h1>logement</h1>
+      <Footer />
+    </div>
+  );
+};
+
+export default Logement;
