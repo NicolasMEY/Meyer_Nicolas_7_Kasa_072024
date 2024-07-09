@@ -1,0 +1,41 @@
+.card {
+    width: 100%;
+    height: 340px;
+    position: relative;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+
+
+
+    &_img {
+        width: inherit;
+        height: inherit;
+        object-fit: cover;
+        border-radius: inherit;
+        transform: scale(1);
+        transition: transform 300ms;
+    }
+
+    &_title {
+        position: absolute;
+        bottom: 0;
+        margin: 15px 20px;
+        color: $tertiary-color;
+        box-sizing: inherit;
+    }
+
+    &_overlay {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        border-radius: inherit;
+    }
+
+    &:hover {
+        > .card_img {
+            transform: scale(1.01);
+        }
+    }
+}
