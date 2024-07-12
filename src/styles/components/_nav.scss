@@ -1,0 +1,22 @@
+.nav-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    // penser à mettre text-transform: uppercase; pour la version responsive mobile
+
+    &__nav-link-home, &__nav-link-about {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    color: $footer-color;
+    text-decoration: none;
+    padding-left: 3rem;
+
+
+        &:hover, &:focus {
+            text-decoration-line: underline;
+        }
+    }
+}
+
