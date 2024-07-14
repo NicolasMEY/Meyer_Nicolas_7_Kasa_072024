@@ -1,0 +1,56 @@
+.collapse {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+
+
+    .dropdown {
+        width: 100%;
+    
+
+        &__title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 0.5em 1em;
+            background-color: $primary-color;
+            margin: 0 auto;
+            margin-top: 1.5em;
+            border-radius: 5px;
+
+            h2 {
+                color: $tertiary-color;
+                font-size: 24px;
+                font-weight: 500;
+            }
+        
+            p {
+                color: $tertiary-color;
+                i {
+                    cursor: pointer;
+                    color: $tertiary-color;
+                }
+            }
+        }
+
+    
+
+        &__content {
+            background-color: $secondary-color;
+            width: 100%;
+            border: 5%;
+
+            p {
+                font-size: 20px;
+                font-weight: 400;
+                color: $primary-color;
+                margin: 0 auto;
+                padding: 0.8em;
+                }
+        }
+
+    }
+}
