@@ -1,13 +1,18 @@
+.banner__dark {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
 .collapse {
     display: flex;
-    width: 100%;
+    // width: 100%;
     justify-content: center;
     align-items: center;
     margin: 30px;
 
 
     .dropdown {
-        width: 100%;
+        width: 90%;
+        // margin-right: 40px;
     
 
         &__title {
@@ -36,19 +41,15 @@
             }
         }
 
-    
-
         &__content {
             background-color: $secondary-color;
             width: 100%;
             border: 5%;
 
             p {
-                font-size: 20px;
-                font-weight: 400;
-                color: $primary-color;
-                margin: 0 auto;
-                padding: 0.8em;
+                font-size: 18px;
+                font-weight: 300;
+                padding: 1em;
                 }
         }
 
