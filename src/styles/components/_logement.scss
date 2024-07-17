@@ -1,0 +1,172 @@
+.logement {
+    flex-direction: column;
+    color: $primary-color;
+    margin-bottom: 20px;
+}
+
+.logementCard {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.description-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__titletags {
+    width: 100%;
+    
+    align-items: center;
+        
+        &__title {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            margin-bottom: 15px;
+
+            .logement-title {
+                font-size: 36px;
+                font-weight: 500;
+            }
+
+            .logement-localisation {
+                font-size: 18px;
+                font-weight: 500;
+                color: $footer-color;
+            }
+        }
+        &__tags {
+            display: flex;
+           
+        }
+    }
+
+    &__proprio {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+
+
+       &__name {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .nom-proprio {
+            font-size: 18px;
+            font-weight: 500;
+            margin-right: 10px;
+            text-align: right;
+            width: 90px;
+        }
+        .photo-proprio {
+            border-radius: 50%;
+            width: 64px;
+            height: 64px;
+            object-fit: cover;
+        }
+       }
+
+       &__rate {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        margin-top: 15px;
+
+        .stars {
+            width: 24px;
+            height: 24px;
+        }
+       }
+    }
+}
+
+// Partie description logement
+.collapse-description-logement {
+display: flex;
+justify-content: space-between;
+width: 100%;
+gap: 50px;
+}
+
+.collapse-description-logement .dropdown__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0.5em 1em;
+    background-color: $primary-color;
+    margin: 0 auto;
+    margin-top: 1.5em;
+    border-radius: 5px;
+
+  h2 {
+    color: $tertiary-color;
+    font-size: 24px;
+    font-weight: 500;
+  }
+  p {
+    color: $tertiary-color;
+    
+    i {
+        cursor: pointer;
+        color: $tertiary-color;
+    }
+}
+}
+
+.collapse-description-logement .dropdown__content {
+    background-color: $secondary-color;
+}
+
+
+.description-content {
+    width: 50%;
+    color: $footer-color;
+
+p {
+    font-size: 18px;
+    font-weight: 300;
+    padding: 1em;
+    }
+    
+}
+.equipements-content {
+    width: 50%;
+    color: $footer-color;
+
+            p {
+                font-size: 18px;
+                font-weight: 300;
+                padding: 1em;
+                }
+    }
+
+
+// Partie tags
+.tag-container {
+    display: flex;
+
+    &__button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $primary-color;
+        color: $tertiary-color;
+        margin-top: 3%;
+        height: 25px;
+        margin-right: 10px;
+        font-size: 14px;
+        font-weight: 500;
+        border-radius: 20px; 
+        padding: 10px 30px;
+    }
+}
+    

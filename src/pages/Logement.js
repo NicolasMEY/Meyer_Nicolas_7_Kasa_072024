@@ -7,6 +7,7 @@ import Tag from "../components/logement/Tag";
 import Collapse from "../components/collapse/Collapse";
 import Rate from "../components/logement/Rate";
 import Host from "../components/logement/Host";
+import Carrousel from "../components/carrousel/Carrousel";
 
 const FicheLogement = () => {
   const { id } = useParams();
@@ -32,13 +33,11 @@ const FicheLogement = () => {
 
   return (
     <div className="logement">
-      {/* mettre le carrousel ici */}
       <Header />
       <main>
-        <img src={logement.cover} alt={logement.title} />{" "}
-        {/* Image du logement */}
-        pictures
-        <p>{logement.description}</p> {/* Description du logement */}
+        <Carrousel slides={logement?.pictures} />
+        {/* <img src={logement.cover} alt={logement.title} />{" "}
+        Image du logement >>> à supprimer pour etre remplacé par le carrousel */}
         <section className="logementCard">
           <div className="description-info">
             <div className="description-info__titletags">
@@ -51,6 +50,9 @@ const FicheLogement = () => {
               {/* Partie Tags */}
               <div className="description-info__titletags__tags">
                 {tagsLogement}
+                {/* {tagsLogement.map((tag, index) => (
+                  <div key={index}>{tag}</div>
+                ))} */}
               </div>
 
               <div className="description-info__proprio">
@@ -70,14 +72,15 @@ const FicheLogement = () => {
           </div>
         </section>
         {/* Partie Collapse */}
-        <div className="descripton-content">
-          <div className="description-content__description">
+        <section className="collapse-description-logement">
+          <div className="description-content">
             <Collapse title="Description" content={logement?.description} />
           </div>
-        </div>
-        <div className="decription-content__equipement">
-          <Collapse title="Équipements" content={equipements} />
-        </div>
+
+          <div className="equipements-content">
+            <Collapse title="Équipements" content={equipements} />
+          </div>
+        </section>
       </main>
       <Footer />
     </div>

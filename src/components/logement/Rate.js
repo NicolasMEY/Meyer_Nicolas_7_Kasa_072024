@@ -7,19 +7,19 @@ function Rate(props) {
   const notes = [1, 2, 3, 4, 5];
   return (
     <div className="rate-container">
-      {notes.map((note) =>
-        score >= note ? (
+      {notes.map((rating) =>
+        score >= rating ? (
           <img
-            key={note.toString()}
+            key={rating.toString()}
             className="stars"
-            src={inactiveStar}
+            src={activeStar}
             alt="Stars"
           />
         ) : (
           <img
-            key={note.toString()}
-            className="Stars"
-            src={activeStar}
+            key={rating.toString()}
+            className="stars"
+            src={inactiveStar}
             alt="Stars"
           />
         )
