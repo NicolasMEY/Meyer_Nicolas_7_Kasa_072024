@@ -11,6 +11,7 @@ import Carrousel from "../components/carrousel/Carrousel";
 
 const FicheLogement = () => {
   const { id } = useParams();
+  // useParams : Récupère l'ID du logement à partir des paramètres d'URL.
   const logement = data.find((item) => item.id === id);
 
   // Partie Tags
@@ -18,7 +19,7 @@ const FicheLogement = () => {
     return <Tag key={i} nom={tags} />;
   });
 
-  // Partie équipements
+  // Partie équipements : On mappe les équipements du logement pour les transformer en éléments de liste HTML.
   const equipements = logement?.equipments.map((equipement, i) => {
     return (
       <ul key={i}>
