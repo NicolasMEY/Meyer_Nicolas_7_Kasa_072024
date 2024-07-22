@@ -4,6 +4,11 @@
     height: 223px;
     margin-bottom: 5px;
 
+    @media screen and (max-width: $breakpoint-mobile) {
+        border-radius: 10px;
+        height: 111px;
+      }
+
     &__img {
         border-radius: 25px;
         height: 100%;
@@ -36,5 +41,16 @@
         color: $tertiary-color;
         width: 733px;
         height: 68px; 
+
+        @media screen and (max-width: $breakpoint-mobile) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            left: 120px;
+            line-height: 25px;
+            text-align: left;
+            font-size: 24px;
+            max-width: 210px;
+          }
     }
 }

@@ -13,6 +13,11 @@
         justify-content: center;
         font-size: 288px;
         font-weight: 700;
+        margin-top: 3rem;
+
+        @media screen and (max-width: 768px) {
+            font-size: 96px;
+          }
     }
 
     &__text {
@@ -22,8 +27,25 @@
         text-align: center;
         font-size: 36px;
         font-weight: 500;
-    }
+        margin-top: 4rem;
 
+        @media screen and (max-width: 768px) {
+            align-items: center;
+            flex-direction: column;
+            font-size: 18px;
+            color: transparent; // Masquer le texte d'origine en le rendant invisible, mais en conservant l'espace
+
+        &::before {
+            content: "Oups ! La page que ";
+            color: $primary-color;
+        }
+        
+        &::after {
+            content: "vous demandez n'existe pas";
+            color: $primary-color;
+        }
+    }
+ }
     &__link {
         display: flex;
         align-items: flex-end;
@@ -31,11 +53,14 @@
         color: $footer-color;
         font-size: 18px;
         font-weight: 500;
-        margin: 3rem 0 2rem 0;
+        margin: 5rem 0 2rem 0;
 
         &:hover, &:focus {
             text-decoration-line: underline;
         }
+
+        @media screen and (max-width: 768px) {
+            font-size: 14px;
+        }
     }
-    
 }

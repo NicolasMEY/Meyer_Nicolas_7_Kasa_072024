@@ -39,7 +39,7 @@ function Carrousel({ slides }) {
           <div
             key={index}
             className={index === currentIndex ? "slider active" : "slider"}
-            // Si index est égal à currentIndex, ajout de la classe active pour indiquer que cette image est actuellement affichée
+            // Si index est égal à currentIndex, ajout de la classe "active" pour indiquer que cette image est actuellement affichée
           >
             {/* Affichag de l'image et du numéro de la diapositive, si l'image correspond à currentIndex */}
             {index === currentIndex && (

@@ -19,5 +19,14 @@
     color : $tertiary-color;
     font-size: 24px;
     font-weight: 500;
+
+    @media screen and (max-width: $breakpoint-mobile) {
+      padding-top: 10px;
+      max-width: 110px;
+      font-size : 12px;
+      text-align: center;
+    }
+
+      
+    }
   }
-}

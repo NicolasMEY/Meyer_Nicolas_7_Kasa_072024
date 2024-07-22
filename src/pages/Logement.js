@@ -37,8 +37,6 @@ const FicheLogement = () => {
       <Header />
       <main>
         <Carrousel slides={logement?.pictures} />
-        {/* <img src={logement.cover} alt={logement.title} />{" "}
-        Image du logement >>> à supprimer pour etre remplacé par le carrousel */}
         <section className="logementCard">
           <div className="description-info">
             <div className="description-info__titletags">

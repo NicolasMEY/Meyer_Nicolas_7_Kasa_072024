@@ -7,6 +7,7 @@ function Rate(props) {
   const notes = [1, 2, 3, 4, 5];
   return (
     <div className="rate-container">
+      {/* Itère sur chaque valeur du tableau notes pour afficher une étoile correspondant à chaque valeur. */}
       {notes.map((rating) =>
         score >= rating ? (
           <img

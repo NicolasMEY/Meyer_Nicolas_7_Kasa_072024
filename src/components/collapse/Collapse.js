@@ -6,7 +6,7 @@ const Collapse = ({ title, content }) => {
   //   Utilise le hook useState pour gérer l'état d'ouverture ou de fermeture du menu. Par défaut, le menu est fermé (isOpen est false)
 
   // Gère l'affichage du contenu des menus/collapses
-  // toggleCollapse est une fonction qui va me permettre d'inverser l'état actuel de isOpen chaque fois qu'elle est appelée. Si isOpen est true est elle change en false et vice et versa
+  // toggleCollapse est une fonction qui va me permettre d'inverse l'état actuel de isOpen chaque fois qu'elle est appelée. Si isOpen est true est elle change en false et vice et versa
   const toggleCollapse = () => {
     setIsOpen(!isOpen);
   };
@@ -24,7 +24,9 @@ const Collapse = ({ title, content }) => {
         </p>
       </div>
       {/* Rendu conditionnel : Si le collapse est à true >>> affichage de la description (content) */}
-      <div className="dropdown__content">{isOpen && <p>{content}</p>}</div>
+      <div className="dropdown__content">
+        {isOpen && <div className="dropdown__content__open">{content}</div>}
+      </div>
     </div>
   );
 };

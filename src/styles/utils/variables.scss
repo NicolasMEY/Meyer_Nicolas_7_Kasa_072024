@@ -13,5 +13,16 @@ $banner-background: $background-color
   url(../../assets&images/banner/home-banner.png);
 
 
-
+  $breakpoints: (
+    mobile: 720px,
+    tablette: 768px,
+    desktop: 1024px,
+    small: 350px,
+    medium: 768px,
+    large: 992px,
+    xlarge: 1200px,
+  );
+  
+  // $breakpoint-mobile: 720px;
+  $breakpoint-mobile: 769px;
 
