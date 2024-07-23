@@ -63,8 +63,8 @@ overflow: hidden;
 
 .left-arrow {
     position: absolute;
-    top: 40%;
-    left: 2%;
+    top: 30%;
+    left: -3%;
     height: 79px;
     width: 46px;
     font-size: calc(1 * 46px); /* Ajuste dynamiquement la taille de la police en fonction de la largeur */
@@ -76,14 +76,15 @@ overflow: hidden;
     @media screen and (max-width: 768px) {
       font-size: calc(1 * 20px);
       height: 20px;
-    width: 12.5px;
+      width: 12.5px;
+      left: -1%;
     }
 }
 
 .right-arrow {
   position: absolute;
-  top: 40%;
-  right: 2%;
+  top: 30%;
+  right: 1%;
   height: 79px;
   width: 46px;
   font-size: calc(1 * 46px); /* Ajuste dynamiquement la taille de la police en fonction de la largeur */
