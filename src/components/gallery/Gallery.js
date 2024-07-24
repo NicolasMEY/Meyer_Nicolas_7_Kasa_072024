@@ -6,7 +6,7 @@ import logements from "../../datas/logement.json";
 const Gallery = () => {
   return (
     <div className="home_gallery">
-      {/* Pour chaque élément dans le tableau logements, une itération est effectuée pour créer une carte. */}
+      {/* Pour chaque élément dans le tableau logements, une itération est effectuée pour créer une card. */}
       {logements.map((logement) => {
         return (
           <article key={logement.id}>

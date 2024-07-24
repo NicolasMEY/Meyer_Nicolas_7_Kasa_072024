@@ -49,9 +49,6 @@ const FicheLogement = () => {
               {/* Partie Tags */}
               <div className="description-info__titletags__tags">
                 {tagsLogement}
-                {/* {tagsLogement.map((tag, index) => (
-                  <div key={index}>{tag}</div>
-                ))} */}
               </div>
 
               <div className="description-info__proprio">

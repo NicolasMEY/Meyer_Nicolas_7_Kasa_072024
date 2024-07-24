@@ -21,7 +21,7 @@ overflow: hidden;
     bottom: 0;
     border-radius: 50px;
     opacity: 0;
-    transition: opacity ease-in-out 0.5s; //apparition progressive
+    transition: opacity ease-in-out 0.7s;
 
     @media screen and (max-width: 768px) {
       border-radius: 10px;

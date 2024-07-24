@@ -14,7 +14,7 @@ function Carrousel({ slides }) {
     setCurrentIndex(currentIndex === length - 1 ? 0 : currentIndex + 1); // Si l'index actuel est la dernière image on retourne à la première image, sinon on incrémente l'index de 1
   };
 
-  // Vérifie que slides est un tableau non vide sinon le composant ne rend rien return null
+  // Vérifie que slides est un tableau non vide sinon le composant ne rend rien :  return null
   if (!Array.isArray(slides) || slides.length <= 0) {
     return null;
   }

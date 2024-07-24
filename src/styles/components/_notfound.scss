@@ -6,17 +6,19 @@
     color: $primary-color;
     margin: 22px 22px;
 
-
     &__404 {
         display: flex;
         align-items: center;
         justify-content: center;
         font-size: 288px;
         font-weight: 700;
-        margin-top: 3rem;
+        margin-top: 247px;
+        color: $primary-color;
+        padding: 0;
 
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: $breakpoint-mobile) {
             font-size: 96px;
+            margin-top: 180px;
           }
     }
 
@@ -27,12 +29,14 @@
         text-align: center;
         font-size: 36px;
         font-weight: 500;
-        margin-top: 4rem;
+        margin-top: 139px;
+        color: $primary-color;
 
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: $breakpoint-mobile) {
             align-items: center;
             flex-direction: column;
             font-size: 18px;
+            margin-top: 113px;
             color: transparent; // Masquer le texte d'origine en le rendant invisible, mais en conservant l'espace
 
         &::before {
@@ -45,6 +49,9 @@
             color: $primary-color;
         }
     }
+    @media screen and (max-width: 539px) {
+        line-height: 8px;
+    }
  }
     &__link {
         display: flex;
@@ -53,14 +60,15 @@
         color: $footer-color;
         font-size: 18px;
         font-weight: 500;
-        margin: 5rem 0 2rem 0;
+        margin: 139px 0;
 
         &:hover, &:focus {
             text-decoration-line: underline;
         }
 
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: $breakpoint-mobile) {
             font-size: 14px;
+            margin: 113px 0;
         }
     }
 }

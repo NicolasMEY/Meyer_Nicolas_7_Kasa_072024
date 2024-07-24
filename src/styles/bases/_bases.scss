@@ -1,5 +1,4 @@
-
-
+// Sélecteur universel, s'applique à tous les élements de la page
 * {
     padding: 0;
     margin: 0;
@@ -8,14 +7,12 @@
 }
 
 body {
-    
     min-width: 360px;
     margin: auto;
 }
 
 main {
     margin: 5%;
-
 }
 
 li {
